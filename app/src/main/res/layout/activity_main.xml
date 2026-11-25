@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FAF7FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imgConcert"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/ic_concert_ticket"
+            android:contentDescription="@string/img_description"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_title"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#382554"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_subtitle"
+            android:textSize="14sp"
+            android:textColor="#6750A4"
+            android:gravity="center"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_event"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#382554"
+            android:layout_marginTop="24dp" />
+
+        <Spinner
+            android:id="@+id/selEvent"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/concert_events"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_quantity"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#382554"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/numTickets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_tickets"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textColor="#382554"
+            android:textColorHint="#777777"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_calculate"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_total"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#382554"
+            android:background="#EDE4FA"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
